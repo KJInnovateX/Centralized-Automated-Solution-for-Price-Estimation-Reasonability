@@ -196,7 +196,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     
     if (locopilotData && locopilotData.uniqueID === loginID && locopilotData.password === loginPassword) {
         alert("Login Successful! Welcome " + locopilotData.name);
-        window.location.href = "index.html";
+        window.location.href = "home";
     } else {
         alert("Invalid credentials. Please try again.");
     }
