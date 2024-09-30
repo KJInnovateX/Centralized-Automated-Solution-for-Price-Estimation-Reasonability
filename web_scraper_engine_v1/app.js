@@ -5,9 +5,8 @@ const app = express();
 
 // Use the environment port if provided, otherwise default to 3000
 const PORT = process.env.PORT || 3000;
-
 // Serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '')));
 
 // Serve the "registration.html" file located in the parent directory as the starting page
 app.get('/', (req, res) => {
