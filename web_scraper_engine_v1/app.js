@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../registration.html'));
 });
 
+app.get('/home', (req, res) => {
+    res.sendFile(path.join(__dirname, '../index.html'));
+});
+
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
 
